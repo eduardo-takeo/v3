@@ -2,7 +2,9 @@
 import GithubIcon from "../assets/icons/github.svg?react";
 import LinkedinIcon from "../assets/icons/linkedin.svg?react";
 import GmailIcon from "../assets/icons/gmail.svg?react";
-import { IExperience } from "@/components/ExperienceCard/ExperienceCard";
+import ZeDelivery from "../assets/images/ze_delivery.jpeg";
+import Topaz from "../assets/images/topaz.jpeg";
+import { ICard } from "@/components/Card/Card";
 import { IIconLinkProps } from "@/components/IconLink/IconLink";
 
 export const socials: IIconLinkProps[] = [
@@ -20,29 +22,48 @@ export const socials: IIconLinkProps[] = [
   },
 ];
 
-export const experiences: IExperience[] = [
+export const experiences: ICard[] = [
   {
-    company: "BEES",
+    title: "Frontend Engineer • BEES",
     period: "2021- PRESENT",
-    position: "Frontend Engineer",
     description:
       "Developing web applications using React, Redux, and TypeScript.",
-    technologies: ["React", "Redux", "TypeScript", "React Native", "Node.js"],
+    tags: ["React", "Redux", "TypeScript", "React Native", "Node.js"],
   },
   {
-    company: "Topaz",
+    title: "Frontend Developer • Topaz",
     period: "2019 - 2021",
-    position: "Frontend Developer",
     description:
       "Developing web applications using React, Redux, and TypeScript.",
-    technologies: ["React", "Angular", "TypeScript", "Firebase"],
+    tags: ["React", "Angular", "TypeScript", "Firebase"],
   },
   {
-    company: "Digital Pages",
+    title: "Internship, Frontend Developer • Digital Pages",
     period: "2018 - 2019",
-    position: "Internship, Frontend Developer",
     description:
       "Developing web applications using React, Redux, and TypeScript.",
-    technologies: ["HTML", "CSS", "Javascript"],
+    tags: ["HTML", "CSS", "Javascript"],
+  },
+];
+
+export const projects: ICard[] = [
+  {
+    title: "Zé Delivery",
+    description:
+      "#20 most downloaded app in Brazil. Developed the new user onboarding flow.",
+    banner: ZeDelivery,
+    tags: ["React", "Redux", "TypeScript", "React Native", "Node.js"],
+  },
+  {
+    title: "Topaz Servcore",
+    description:
+      "#20 most downloaded app in Brazil. Developed the new user onboarding flow.",
+    banner: Topaz,
+  },
+  {
+    title: "Zé Delivery",
+    description:
+      "#20 most downloaded app in Brazil. Developed the new user onboarding flow.",
+    banner: ZeDelivery,
   },
 ];

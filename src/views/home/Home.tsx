@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./Home.scss";
-import { experiences, socials } from "@/content";
+import { experiences, projects, socials } from "@/content";
 import IconLink from "@/components/IconLink/IconLink";
-import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
+import Card from "@/components/Card/Card";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -38,14 +38,25 @@ const Home = () => {
         </div>
 
         <div className="feed__experiences">
-          {experiences?.map((experience, index) => (
-            <ExperienceCard
+          {experiences?.map(({ title, period, description, tags }, index) => (
+            <Card
               key={index}
-              company={experience.company}
-              period={experience.period}
-              position={experience.position}
-              description={experience.description}
-              technologies={experience.technologies}
+              title={title}
+              period={period}
+              description={description}
+              tags={tags}
+            />
+          ))}
+        </div>
+
+        <div className="feed__projects">
+          {projects?.map(({ title, description, banner, tags = [] }, index) => (
+            <Card
+              key={index}
+              title={title}
+              description={description}
+              banner={banner}
+              tags={tags}
             />
           ))}
         </div>
