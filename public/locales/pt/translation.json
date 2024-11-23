@@ -1,4 +1,7 @@
 {
-  "name": "Eduardo Takeo",
-  "jobTitle": "Desenvolvedor Frontend"
+  "personalInformation": {
+    "name": "Eduardo Takeo",
+    "jobTitle": "Desenvolvedor Frontend",
+    "presentationMessage": "Eu construo experiências, acessíveis e pixel-perfect para web."
+  }
 }

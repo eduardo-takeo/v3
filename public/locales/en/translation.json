@@ -1,4 +1,7 @@
 {
-  "name": "Eduardo Takeo",
-  "jobTitle": "Frontend Engineer"
+  "personalInformation": {
+    "name": "Eduardo Takeo",
+    "jobTitle": "Frontend Engineer",
+    "presentationMessage": "I build accessible, pixel-perfect digital experiences for the web."
+  }
 }
