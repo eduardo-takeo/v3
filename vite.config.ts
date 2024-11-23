@@ -17,7 +17,10 @@ export default defineConfig({
         api: "modern-compiler",
         quietDeps: true,
         // global scss, this will be injected in every scss file that will be compiled
-        additionalData: '@use "@/styles/_breakpoints.scss" as *;',
+        additionalData: `
+          @use "@/styles/_breakpoints.scss" as *;
+          @use "@/styles/_colors.scss" as *;
+        `,
       },
     },
   },

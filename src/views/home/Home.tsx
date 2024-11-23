@@ -1,27 +1,11 @@
 import { useTranslation } from "react-i18next";
 import "./Home.scss";
+import { experiences, socials } from "@/content";
 import IconLink from "@/components/IconLink/IconLink";
-import GithubIcon from "../../assets/icons/github.svg?react";
-import LinkedinIcon from "../../assets/icons/linkedin.svg?react";
-import GmailIcon from "../../assets/icons/gmail.svg?react";
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 
 const Home = () => {
   const { t } = useTranslation();
-
-  const socials = [
-    {
-      icon: <GithubIcon />,
-      href: "https://github.com/eduardo-takeo",
-    },
-    {
-      icon: <LinkedinIcon />,
-      href: "https://www.linkedin.com/in/eduardo-takeo",
-    },
-    {
-      icon: <GmailIcon />,
-      href: "mailto: eduardo.higashi.dev@gmail.com",
-    },
-  ];
 
   return (
     <main className="main">
@@ -35,9 +19,9 @@ const Home = () => {
         {/* TODO: implement navigation */}
         <nav className="main-menu__navbar">
           <ul>
-            <li>Home</li>
             <li>About</li>
             <li>Experiences</li>
+            <li>Projects</li>
           </ul>
         </nav>
 
@@ -47,6 +31,25 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <section className="feed">
+        <div className="feed__summary">
+          <p>{t("feed.summary")}</p>
+        </div>
+
+        <div className="feed__experiences">
+          {experiences?.map((experience, index) => (
+            <ExperienceCard
+              key={index}
+              company={experience.company}
+              period={experience.period}
+              position={experience.position}
+              description={experience.description}
+              technologies={experience.technologies}
+            />
+          ))}
+        </div>
+      </section>
     </main>
   );
 };
