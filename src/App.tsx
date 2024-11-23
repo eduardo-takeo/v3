@@ -1,4 +1,4 @@
-import Home from "./views/home/Home";
+import Home from "@/views/Home/Home.tsx";
 
 function App() {
   return <Home />;
