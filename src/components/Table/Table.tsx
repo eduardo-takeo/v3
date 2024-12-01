@@ -1,13 +1,13 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
-import Badge from "@/components/Badge/Badge"; // Certifique-se de importar o componente Badge
+import Badge from "@/components/Badge/Badge";
+import "./Table.scss";
 
 export enum ColumnType {
   TEXT = "text",
   NUMBER = "number",
   DATE = "date",
   LINK = "link",
-  BADGE = "badge", // Novo tipo de dado
+  BADGE = "badge",
 }
 
 export interface ITableColumn {
@@ -17,18 +17,18 @@ export interface ITableColumn {
 }
 
 export interface ITableRow {
-  [key: string]: string | number | Date | string[]; // Adicionado array de strings
+  [key: string]: string | number | Date | string[] | null | undefined;
 }
 
-interface TableProps {
+interface ITableProps {
   columns: ITableColumn[];
   data: ITableRow[];
 }
 
-const Table: React.FC<TableProps> = ({ columns, data }) => {
+const Table = ({ columns, data }: ITableProps) => {
   const { t } = useTranslation();
 
-  const renderCell = (value: any, type: ColumnType) => {
+  const renderCell = (value: unknown, type: ColumnType) => {
     switch (type) {
       case ColumnType.BADGE:
         return Array.isArray(value)
@@ -41,25 +41,22 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
           </a>
         ) : null;
       case ColumnType.DATE:
-        return value instanceof Date ? String(value.getFullYear()) : null;
+        return value
+          ? new Date(value as string).getFullYear().toString()
+          : null;
+      case ColumnType.TEXT:
+        return value ? value.toString() : "";
       default:
-        return t(String(value));
+        return null;
     }
   };
 
   return (
-    <table style={{ width: "100%", borderCollapse: "collapse" }}>
+    <table className="table">
       <thead>
         <tr>
           {columns.map((col) => (
-            <th
-              key={col.key}
-              style={{
-                borderBottom: "1px solid #ddd",
-                padding: "8px",
-                textAlign: "left",
-              }}
-            >
+            <th key={col.key}>
               {t(col.header)} {/* Traduz o cabeçalho */}
             </th>
           ))}
@@ -69,15 +66,7 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
         {data.map((row, rowIndex) => (
           <tr key={rowIndex}>
             {columns.map((col) => (
-              <td
-                key={col.key}
-                style={{
-                  borderBottom: "1px solid #ddd",
-                  padding: "8px",
-                }}
-              >
-                {renderCell(row[col.key], col.type)}
-              </td>
+              <td key={col.key}>{renderCell(row[col.key], col.type)}</td>
             ))}
           </tr>
         ))}

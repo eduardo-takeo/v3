@@ -1,4 +1,3 @@
-// TODO: fix this table component
 import Table, { ColumnType, ITableColumn } from "@/components/Table/Table";
 import projects from "@/content/projects.json";
 import "./Projects.scss";
@@ -8,7 +7,7 @@ const columns: ITableColumn[] = [
   {
     key: "created_at",
     header: "projects.table.columns.year",
-    type: ColumnType.TEXT,
+    type: ColumnType.DATE,
   },
   { key: "name", header: "projects.table.columns.name", type: ColumnType.TEXT },
   {
@@ -17,9 +16,9 @@ const columns: ITableColumn[] = [
     type: ColumnType.TEXT,
   },
   {
-    key: "language",
-    header: "projects.table.columns.technologies",
-    type: ColumnType.TEXT,
+    key: "languages",
+    header: "projects.table.columns.languages",
+    type: ColumnType.BADGE,
   },
   {
     key: "homepage",

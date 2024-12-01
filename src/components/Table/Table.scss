@@ -1,2 +1,15 @@
+// TODO: style table component
 .table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  td {
+    padding: 8px;
+  }
 }

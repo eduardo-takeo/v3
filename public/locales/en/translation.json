@@ -14,7 +14,7 @@
         "year": "Year",
         "name": "Name",
         "description": "Description",
-        "technologies": "Technologies",
+        "languages": "Languages",
         "page": "Link"
       }
     }
