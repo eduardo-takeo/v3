@@ -20,20 +20,17 @@ const columns: ITableColumn[] = [
     header: "projects.table.columns.languages",
     type: ColumnType.BADGE,
   },
-  {
-    key: "homepage",
-    header: "projects.table.columns.page",
-    type: ColumnType.LINK,
-  },
 ];
 
 const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="container">
+    <div className="projects">
       <h1>{t("projects.table.title")}</h1>
       <Table columns={columns} data={projects} />
+    </div>
     </div>
   );
 };

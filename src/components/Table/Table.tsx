@@ -31,9 +31,13 @@ const Table = ({ columns, data }: ITableProps) => {
   const renderCell = (value: unknown, type: ColumnType) => {
     switch (type) {
       case ColumnType.BADGE:
-        return Array.isArray(value)
-          ? value.map((badge, index) => <Badge key={index}>{badge}</Badge>)
-          : null;
+        return Array.isArray(value) ? (
+          <span className="badges__container">
+            {value.map((badge, index) => (
+              <Badge key={index}>{badge}</Badge>
+            ))}
+          </span>
+        ) : null;
       case ColumnType.LINK:
         return typeof value === "string" ? (
           <a href={value} target="_blank" rel="noopener noreferrer">
