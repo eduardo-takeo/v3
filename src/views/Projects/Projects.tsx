@@ -1,7 +1,9 @@
 import Table, { ColumnType, ITableColumn } from "@/components/Table/Table";
 import projects from "@/content/projects.json";
+import LeftArrowIcon from "../../assets/icons/left-arrow.svg?react";
 import "./Projects.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 const columns: ITableColumn[] = [
   {
@@ -28,6 +30,10 @@ const Projects = () => {
   return (
     <div className="container">
       <div className="projects">
+        <Link to="/" className="back-link">
+          <LeftArrowIcon />
+          {t("general.goBackToHome")}
+        </Link>
         <h1>{t("projects.table.title")}</h1>
         <Table columns={columns} data={projects} />
       </div>
