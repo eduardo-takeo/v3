@@ -19,8 +19,45 @@
 
 body {
   background-color: $background;
-  background-image: linear-gradient(45deg, #1c1c37 0%, #181845 100%);
   color: $white-800;
+  min-height: 100%;
+
+  // glow effect
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &::before,
+  &::after {
+    border-radius: inherit;
+    content: "";
+    min-height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  &::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(29, 78, 216, 0.15),
+      transparent 80%
+    );
+    z-index: 3;
+  }
+
+  &::after {
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(29, 78, 216, 0.7),
+      transparent 80%
+    );
+    z-index: 1;
+  }
 }
 
 a {
