@@ -5,7 +5,7 @@
     "description": "To Do app built with Angular",
     "url": "https://api.github.com/repos/eduardo-takeo/angular-todo",
     "homepage": null,
-    "language": ["TypeScript", "SCSS", "HTML"],
+    "languages": ["TypeScript", "SCSS", "HTML"],
     "created_at": "2023-08-07T02:16:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Version 4 of API design with node course",
     "url": "https://api.github.com/repos/eduardo-takeo/api-design-nodejs-v4",
     "homepage": null,
-    "language": ["TypeScript", "JavaScript"],
+    "languages": ["TypeScript", "JavaScript"],
     "created_at": "2023-02-18T01:36:04Z"
   },
   {
@@ -23,7 +23,7 @@
     "description": "WON Games e-commerce API built with Strapi",
     "url": "https://api.github.com/repos/eduardo-takeo/api-won-games",
     "homepage": null,
-    "language": ["JavaScript", "Shell"],
+    "languages": ["JavaScript", "Shell"],
     "created_at": "2022-03-28T22:10:10Z"
   },
   {
@@ -32,7 +32,7 @@
     "description": null,
     "url": "https://api.github.com/repos/eduardo-takeo/blockchainer",
     "homepage": null,
-    "language": ["CSS", "JavaScript", "HTML"],
+    "languages": ["CSS", "JavaScript", "HTML"],
     "created_at": "2020-02-06T20:43:39Z"
   },
   {
@@ -41,7 +41,7 @@
     "description": "A React boilerplate with NextJS, Typescript, ESLint, Prettier, Husky, Lint-staged, Jest, RTL, Storybook and Next-PWA",
     "url": "https://api.github.com/repos/eduardo-takeo/boilerplate",
     "homepage": null,
-    "language": ["TypeScript", "JavaScript", "CSS", "Handlebars", "Shell"],
+    "languages": ["TypeScript", "JavaScript", "CSS", "Handlebars", "Shell"],
     "created_at": "2022-03-20T13:34:51Z"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Socket. IO real time chat",
     "url": "https://api.github.com/repos/eduardo-takeo/chat",
     "homepage": null,
-    "language": ["TypeScript", "SCSS", "JavaScript", "HTML"],
+    "languages": ["TypeScript", "SCSS", "JavaScript", "HTML"],
     "created_at": "2020-11-19T23:50:29Z"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Custom component library template",
     "url": "https://api.github.com/repos/eduardo-takeo/component-library-template",
     "homepage": null,
-    "language": ["HTML", "TypeScript", "CSS", "JavaScript"],
+    "languages": ["HTML", "TypeScript", "CSS", "JavaScript"],
     "created_at": "2022-08-08T02:06:03Z"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Clothing e-commerce demo - https://crwn-clothing-gh.herokuapp.com/",
     "url": "https://api.github.com/repos/eduardo-takeo/crwn-clothing",
     "homepage": "",
-    "language": ["JavaScript", "SCSS", "HTML", "CSS"],
+    "languages": ["JavaScript", "SCSS", "HTML", "CSS"],
     "created_at": "2020-12-14T23:22:12Z"
   },
   {
@@ -77,7 +77,7 @@
     "description": null,
     "url": "https://api.github.com/repos/eduardo-takeo/CSharp-gitrep",
     "homepage": null,
-    "language": ["C#"],
+    "languages": ["C#"],
     "created_at": "2019-02-11T13:25:30Z"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Script to generate file with only selected columns of a csv",
     "url": "https://api.github.com/repos/eduardo-takeo/csv-column-selector",
     "homepage": null,
-    "language": ["Python"],
+    "languages": ["Python"],
     "created_at": "2023-03-25T18:22:22Z"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Chakra UI landing page",
     "url": "https://api.github.com/repos/eduardo-takeo/dashgo",
     "homepage": null,
-    "language": ["TypeScript"],
+    "languages": ["TypeScript"],
     "created_at": "2021-05-29T19:12:11Z"
   },
   {
@@ -104,7 +104,7 @@
     "description": "Personal dotfiles",
     "url": "https://api.github.com/repos/eduardo-takeo/dotfiles-public",
     "homepage": null,
-    "language": ["Shell", "Lua"],
+    "languages": ["Shell", "Lua"],
     "created_at": "2023-01-19T03:58:49Z"
   },
   {
@@ -113,7 +113,7 @@
     "description": "ReactJS finance app",
     "url": "https://api.github.com/repos/eduardo-takeo/dtmoney",
     "homepage": null,
-    "language": ["TypeScript", "HTML"],
+    "languages": ["TypeScript", "HTML"],
     "created_at": "2021-05-11T21:59:19Z"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Ecological Collection points application written with Typescript",
     "url": "https://api.github.com/repos/eduardo-takeo/ecoleta",
     "homepage": "",
-    "language": ["TypeScript", "CSS", "HTML", "JavaScript"],
+    "languages": ["TypeScript", "CSS", "HTML", "JavaScript"],
     "created_at": "2020-06-05T22:37:11Z"
   },
   {
@@ -131,7 +131,7 @@
     "description": "Personal profile",
     "url": "https://api.github.com/repos/eduardo-takeo/eduardo-takeo",
     "homepage": null,
-    "language": [],
+    "languages": [],
     "created_at": "2023-03-31T03:03:44Z"
   },
   {
@@ -140,7 +140,7 @@
     "description": "Face recognition app using Clarifai API",
     "url": "https://api.github.com/repos/eduardo-takeo/face-recognition-brain",
     "homepage": "",
-    "language": ["JavaScript", "CSS", "HTML"],
+    "languages": ["JavaScript", "CSS", "HTML"],
     "created_at": "2020-02-04T19:32:40Z"
   },
   {
@@ -149,7 +149,7 @@
     "description": "Frontend mentor chalenge #2",
     "url": "https://api.github.com/repos/eduardo-takeo/fylo",
     "homepage": null,
-    "language": ["HTML", "CSS"],
+    "languages": ["HTML", "CSS"],
     "created_at": "2021-04-29T21:34:53Z"
   },
   {
@@ -158,7 +158,7 @@
     "description": "News for developers  - Next.js - Typescript",
     "url": "https://api.github.com/repos/eduardo-takeo/ignews",
     "homepage": null,
-    "language": ["TypeScript", "SCSS", "JavaScript"],
+    "languages": ["TypeScript", "SCSS", "JavaScript"],
     "created_at": "2021-05-17T22:46:39Z"
   },
   {
@@ -167,7 +167,7 @@
     "description": "Ignite challenge #1 - todo",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-01",
     "homepage": "",
-    "language": ["TypeScript", "JavaScript", "SCSS", "HTML"],
+    "languages": ["TypeScript", "JavaScript", "SCSS", "HTML"],
     "created_at": "2021-05-05T23:32:11Z"
   },
   {
@@ -176,7 +176,7 @@
     "description": "Ignite challenge #2 - moviesDB",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-02",
     "homepage": "",
-    "language": ["TypeScript", "SCSS", "JavaScript", "HTML"],
+    "languages": ["TypeScript", "SCSS", "JavaScript", "HTML"],
     "created_at": "2021-05-06T00:21:37Z"
   },
   {
@@ -185,7 +185,7 @@
     "description": "Ignite challenge #3 - Rocketshoes",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-03",
     "homepage": "",
-    "language": ["TypeScript", "JavaScript", "HTML"],
+    "languages": ["TypeScript", "JavaScript", "HTML"],
     "created_at": "2021-05-15T00:54:34Z"
   },
   {
@@ -194,7 +194,7 @@
     "description": "Ignite challenge #4 - GoRestaurant",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-04",
     "homepage": "",
-    "language": ["TypeScript", "HTML"],
+    "languages": ["TypeScript", "HTML"],
     "created_at": "2021-05-17T00:07:05Z"
   },
   {
@@ -203,7 +203,7 @@
     "description": "Ignite challenge #5 - spacetravelling blog",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-05",
     "homepage": "",
-    "language": ["TypeScript", "JavaScript", "SCSS"],
+    "languages": ["TypeScript", "JavaScript", "SCSS"],
     "created_at": "2021-05-23T13:12:45Z"
   },
   {
@@ -212,7 +212,7 @@
     "description": "Ignite challenge #6 - worldtrip",
     "url": "https://api.github.com/repos/eduardo-takeo/ignite-challenge-06",
     "homepage": null,
-    "language": ["TypeScript"],
+    "languages": ["TypeScript"],
     "created_at": "2021-06-01T02:22:11Z"
   },
   {
@@ -221,7 +221,7 @@
     "description": "for vanilla javascript study purposes",
     "url": "https://api.github.com/repos/eduardo-takeo/just-js",
     "homepage": null,
-    "language": ["JavaScript"],
+    "languages": ["JavaScript"],
     "created_at": "2023-03-19T19:25:15Z"
   },
   {
@@ -230,7 +230,7 @@
     "description": "Dark theme for VS Code",
     "url": "https://api.github.com/repos/eduardo-takeo/kurai-vscode",
     "homepage": null,
-    "language": [],
+    "languages": [],
     "created_at": "2023-02-12T18:40:53Z"
   },
   {
@@ -239,7 +239,7 @@
     "description": "Frontend Mentor challenge - Simple landing page with HTML and Sass",
     "url": "https://api.github.com/repos/eduardo-takeo/loopstudios",
     "homepage": null,
-    "language": ["HTML", "SCSS", "JavaScript"],
+    "languages": ["HTML", "SCSS", "JavaScript"],
     "created_at": "2021-04-27T00:32:42Z"
   },
   {
@@ -248,7 +248,7 @@
     "description": "Nature travel agency website written with Sass",
     "url": "https://api.github.com/repos/eduardo-takeo/natours",
     "homepage": "",
-    "language": ["CSS", "HTML"],
+    "languages": ["CSS", "HTML"],
     "created_at": "2020-02-21T13:41:04Z"
   },
   {
@@ -257,7 +257,7 @@
     "description": "Boilerplate project using NextJS, Typescript and ChakraUI",
     "url": "https://api.github.com/repos/eduardo-takeo/nextjs-typescript-chakraui-template",
     "homepage": null,
-    "language": ["TypeScript"],
+    "languages": ["TypeScript"],
     "created_at": "2020-09-16T01:30:25Z"
   },
   {
@@ -266,7 +266,7 @@
     "description": "Nodejs API",
     "url": "https://api.github.com/repos/eduardo-takeo/nlw-valoriza",
     "homepage": null,
-    "language": ["TypeScript"],
+    "languages": ["TypeScript"],
     "created_at": "2021-06-21T21:04:54Z"
   }
 ]

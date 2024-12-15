@@ -1,2 +1,21 @@
+// TODO: style table component
 .table {
+  border-collapse: collapse;
+
+  th {
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  td {
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .badges {
+    &__container {
+      display: flex;
+      gap: 8px;
+    }
+  }
 }

@@ -1,4 +1,8 @@
 {
+  "general": {
+    "goBackToHome": "Voltar para a página inicial",
+    "seeAllProjects": "Ver todos os projetos"
+  },
   "personalInformation": {
     "name": "Eduardo Takeo",
     "jobTitle": "Desenvolvedor Frontend",
@@ -6,5 +10,17 @@
   },
   "feed": {
     "summary": "Desenvolvedor Frontend com 5 anos de experiência em React Profissional com sólida experiência no desenvolvimento de interfaces modernas e responsivas utilizando React e seu ecossistema. Possuo habilidades avançadas em JavaScript, TypeScript, HTML, CSS e bibliotecas como Redux e Styled-Components, além de experiência em metodologias ágeis (Scrum/Kanban). Focado em criar aplicações de alto desempenho e excelente experiência do usuário, colaborando com equipes multidisciplinares para entregar soluções inovadoras. Proativo, com forte capacidade de resolver problemas e acompanhar tendências tecnológicas para implementar as melhores práticas em desenvolvimento frontend."
+  },
+  "projects": {
+    "table": {
+      "title": "Todos os projetos",
+      "columns": {
+        "year": "Ano",
+        "name": "Nome",
+        "description": "Descrição",
+        "languages": "Linguagens",
+        "page": "Link"
+      }
+    }
   }
 }

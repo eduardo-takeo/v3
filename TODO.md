@@ -1,10 +1,9 @@
 # TODO
 
 - [ ] Implement routing feature
-- [ ] Create /projects route
-- [ ] Fecth projects from github
+- [x] Create /projects route
 - [ ] Move all texts to translation files
-- [ ] Adjust Badge styles
+- [x] Adjust Badge styles
 - [ ] Make page responsive
 - [ ] Adjust Card styles(texts too big, spacing too, but especially hover effect)
 - [ ] Implement navigation

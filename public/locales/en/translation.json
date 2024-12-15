@@ -1,4 +1,8 @@
 {
+  "general": {
+    "goBackToHome": "Go to Home",
+    "seeAllProjects": "See all projects"
+  },
   "personalInformation": {
     "name": "Eduardo Takeo",
     "jobTitle": "Frontend Engineer",
@@ -14,7 +18,7 @@
         "year": "Year",
         "name": "Name",
         "description": "Description",
-        "technologies": "Technologies",
+        "languages": "Languages",
         "page": "Link"
       }
     }

@@ -46,3 +46,27 @@
     margin-bottom: 10rem;
   }
 }
+
+.feed__projects__see-all-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $teal;
+
+  & > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $teal;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+
+    & > svg {
+      transform: translateX(4px);
+    }
+  }
+
+
+}

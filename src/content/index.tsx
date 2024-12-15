@@ -24,8 +24,23 @@ export const socials: IIconLinkProps[] = [
 
 export const experiences: ICard[] = [
   {
+    title: "Frontend Engineer • Zé Delivery",
+    period: "2024 - PRESENT",
+    description:
+      "Developing web applications using React, Redux, and TypeScript.",
+    tags: [
+      "React",
+      "React Native",
+      "TypeScript",
+      "Split.io",
+      "Storybook",
+      "Jest",
+      "Segment",
+    ],
+  },
+  {
     title: "Frontend Engineer • BEES",
-    period: "2021- PRESENT",
+    period: "2021 - 2024",
     description:
       "Developing web applications using React, Redux, and TypeScript.",
     tags: ["React", "Redux", "TypeScript", "React Native", "Node.js"],

@@ -3,6 +3,8 @@ import "./Home.scss";
 import { experiences, projects, socials } from "@/content";
 import IconLink from "@/components/IconLink/IconLink";
 import Card from "@/components/Card/Card";
+import { Link } from "react-router";
+import RightArrowIcon from "../../assets/icons/right-arrow.svg?react";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -59,6 +61,10 @@ const Home = () => {
               tags={tags}
             />
           ))}
+          <Link to="/projects" className="feed__projects__see-all-link">
+            {t("general.seeAllProjects")}
+            <RightArrowIcon />
+          </Link>
         </div>
       </section>
     </main>
