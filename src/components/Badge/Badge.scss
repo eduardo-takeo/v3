@@ -1,9 +1,12 @@
 // TODO: fix Badge messy styles
 .badge {
-  padding: 2px 12px;
-  border-radius: 80px;
-  background-color: $teal;
-  opacity: 0.8;
-  font-size: 0.8rem;
-  color: $white-1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 14px;
+  border-radius: 150px;
+  background-color: $teal-translucid;
+  font-size: 0.7rem;
+  color: $teal;
+  text-wrap: nowrap;
 }

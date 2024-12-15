@@ -27,10 +27,10 @@ const Projects = () => {
 
   return (
     <div className="container">
-    <div className="projects">
-      <h1>{t("projects.table.title")}</h1>
-      <Table columns={columns} data={projects} />
-    </div>
+      <div className="projects">
+        <h1>{t("projects.table.title")}</h1>
+        <Table columns={columns} data={projects} />
+      </div>
     </div>
   );
 };

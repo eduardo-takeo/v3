@@ -32,9 +32,7 @@ const Card = ({
           <h3>{title}</h3>
           <p>{description}</p>
           <span className="card__content-tags">
-            {tags?.map((tag, index) => (
-              <Badge key={index}>{tag}</Badge>
-            ))}
+            {tags?.map((tag, index) => <Badge key={index}>{tag}</Badge>)}
           </span>
         </div>
       </div>

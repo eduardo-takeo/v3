@@ -5,7 +5,7 @@ export interface IBadge {
 }
 
 const Badge = ({ children }: IBadge) => {
-  return <span className={`badge`}>{children}</span>;
+  return <div className="badge">{children}</div>;
 };
 
 export default Badge;
