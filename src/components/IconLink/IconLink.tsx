@@ -1,6 +1,7 @@
 import "./IconLink.scss";
 
-export interface IIconLinkProps {
+export interface IIconLinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   icon: React.ReactNode;
   href: string;
 }

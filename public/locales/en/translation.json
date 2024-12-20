@@ -1,7 +1,8 @@
 {
   "general": {
     "goBackToHome": "Go to Home",
-    "seeAllProjects": "See all projects"
+    "seeAllProjects": "See all projects",
+    "seeResume": "See resume"
   },
   "personalInformation": {
     "name": "Eduardo Takeo",

@@ -29,7 +29,12 @@ const Home = () => {
 
         <div className="main-menu__social">
           {socials?.map((social, index) => (
-            <IconLink key={index} icon={social.icon} href={social.href} />
+            <IconLink
+              key={index}
+              target="_blank"
+              icon={social.icon}
+              href={social.href}
+            />
           ))}
         </div>
       </div>
@@ -49,6 +54,10 @@ const Home = () => {
               tags={tags}
             />
           ))}
+          <Link to="/projects" className="feed__link">
+            {t("general.seeResume")}
+            <RightArrowIcon />
+          </Link>
         </div>
 
         <div className="feed__projects">
@@ -61,7 +70,7 @@ const Home = () => {
               tags={tags}
             />
           ))}
-          <Link to="/projects" className="feed__projects__see-all-link">
+          <Link to="/projects" className="feed__link">
             {t("general.seeAllProjects")}
             <RightArrowIcon />
           </Link>

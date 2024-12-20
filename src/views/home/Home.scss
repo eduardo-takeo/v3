@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  max-width: 85vw;
+  max-width: 64vw;
   margin: auto;
 }
 
@@ -16,7 +16,7 @@
 
   &__presentation-card {
     > h1 {
-      font-size: 2.2rem;
+      font-size: 2.8rem;
     }
   }
 
@@ -45,25 +45,27 @@
     gap: 1rem;
     margin-bottom: 10rem;
   }
-}
 
-.feed__projects__see-all-link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: $teal;
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $teal;
 
-  & > svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: $teal;
-    transition: all 0.2s;
-  }
-
-  &:hover {
     & > svg {
-      transform: translateX(4px);
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $teal;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      text-decoration: underline;
+
+      & > svg {
+        transform: translateX(4px);
+      }
     }
   }
 }
