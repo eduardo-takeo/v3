@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background;
   color: $white-800;
@@ -63,6 +67,8 @@ body {
 a {
   font-weight: 500;
   text-decoration: inherit;
+  color: $white-800;
+  cursor: pointer;
 }
 
 h1 {

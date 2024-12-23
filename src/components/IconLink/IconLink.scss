@@ -2,6 +2,7 @@
   > svg {
     width: 30px;
     color: $white-400;
+    transition: all 0.3s;
 
     &:hover {
       color: $white-800;

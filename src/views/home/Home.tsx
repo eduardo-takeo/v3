@@ -21,9 +21,15 @@ const Home = () => {
         {/* TODO: implement navigation */}
         <nav className="main-menu__navbar">
           <ul>
-            <li>About</li>
-            <li>Experiences</li>
-            <li>Projects</li>
+            <li>
+              <a href="#summary">ABOUT</a>
+            </li>
+            <li>
+              <a href="#experiences">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="#projects">PROJECTS</a>
+            </li>
           </ul>
         </nav>
 
@@ -39,12 +45,12 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="feed">
+      <section id="summary" className="feed">
         <div className="feed__summary">
           <p>{t("feed.summary")}</p>
         </div>
 
-        <div className="feed__experiences">
+        <div id="experiences" className="feed__experiences">
           {experiences?.map(({ title, period, description, tags }, index) => (
             <Card
               key={index}
@@ -60,7 +66,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="feed__projects">
+        <div id="projects" className="feed__projects">
           {projects?.map(({ title, description, banner, tags = [] }, index) => (
             <Card
               key={index}

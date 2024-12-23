@@ -21,6 +21,42 @@
   }
 
   &__navbar {
+    li {
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      margin-bottom: 0.4rem;
+
+      a {
+        color: $white-400;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+
+      ::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        bottom: 12px;
+        width: 0;
+        height: 2px;
+        background-color: $white-800;
+        transition: width 0.3s;
+        transform: translateX(-50%);
+      }
+
+      &:hover {
+        padding-left: 4rem;
+
+        a {
+          font-size: 1rem;
+          color: $white-800;
+        }
+
+        ::before {
+          width: 50px;
+        }
+      }
+    }
   }
 
   &__social {
