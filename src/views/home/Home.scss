@@ -2,6 +2,7 @@
   display: flex;
   max-width: 64vw;
   margin: auto;
+  gap: 2rem;
 }
 
 .main-menu {
@@ -114,6 +115,7 @@
 
     &:hover {
       color: $white-1000;
+      text-decoration: underline;
     }
   }
 }
