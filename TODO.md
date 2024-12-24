@@ -2,7 +2,7 @@
 
 - [x] Implement routing feature
 - [x] Create /projects route
-- [ ] Move all texts to translation files
+- [x] Move all texts to translation files
 - [x] Adjust Badge styles
 - [ ] Make page responsive
 - [x] Adjust Card styles(texts too big, spacing too, but especially hover effect)
@@ -11,5 +11,5 @@
 - [x] Adjust all links and redirects
 - [ ] Create link to download resumé
 - [ ] Change banner images
-- [ ] Create navbar animation
+- [x] Create navbar animation
 - [ ] Add repo url to Table component

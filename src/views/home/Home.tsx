@@ -18,17 +18,16 @@ const Home = () => {
           <p>{t("personalInformation.presentationMessage")}</p>
         </div>
 
-        {/* TODO: implement navigation */}
         <nav className="main-menu__navbar">
           <ul>
             <li>
-              <a href="#summary">ABOUT</a>
+              <a href="#about">{t("navbar.about")}</a>
             </li>
             <li>
-              <a href="#experiences">EXPERIENCE</a>
+              <a href="#experiences">{t("navbar.experience")}</a>
             </li>
             <li>
-              <a href="#projects">PROJECTS</a>
+              <a href="#projects">{t("navbar.projects")}</a>
             </li>
           </ul>
         </nav>
@@ -45,9 +44,9 @@ const Home = () => {
         </div>
       </div>
 
-      <section id="summary" className="feed">
-        <div className="feed__summary">
-          <p>{t("feed.summary")}</p>
+      <section id="about" className="feed">
+        <div className="feed__about">
+          <p>{t("feed.about")}</p>
         </div>
 
         <div id="experiences" className="feed__experiences">
