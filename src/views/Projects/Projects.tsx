@@ -30,11 +30,11 @@ const Projects = () => {
   return (
     <div className="container">
       <div className="projects">
-        <Link to="/" className="back-link">
+        <Link to="/" className="projects__back-link">
           <LeftArrowIcon />
           {t("general.goBackToHome")}
         </Link>
-        <h1>{t("projects.table.title")}</h1>
+        <h1 className="projects__title">{t("projects.table.title")}</h1>
         <Table columns={columns} data={projects} />
       </div>
     </div>

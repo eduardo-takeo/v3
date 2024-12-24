@@ -1,27 +1,31 @@
 .container {
-  width: 70%;
+  max-width: 85%;
   margin: 5rem auto;
 }
 
-.back-link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: $teal;
-
-  & > svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: $teal;
-    transition: all 0.2s;
+.projects {
+  &__title {
+    margin-bottom: 3rem;
   }
 
-  &:hover {
+  &__back-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $teal;
 
     & > svg {
-      transform: translateX(-4px);
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $teal;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      & > svg {
+        transform: translateX(-4px);
+      }
     }
   }
 }
-
