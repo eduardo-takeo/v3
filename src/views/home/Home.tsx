@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import "./Home.scss";
 import { experiences, projects, socials } from "@/content";
 import IconLink from "@/components/IconLink/IconLink";
@@ -81,6 +81,35 @@ const Home = () => {
             <RightArrowIcon />
           </Link>
         </div>
+
+        <footer className="footer">
+          <Trans
+            i18nKey="footer"
+            components={{
+              viteLink: (
+                <a
+                  href="https://vite.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ),
+              reactLink: (
+                <a
+                  href="https://react.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ),
+              vercelLink: (
+                <a
+                  href="https://vercel.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ),
+            }}
+          />
+        </footer>
       </section>
     </main>
   );
