@@ -10,10 +10,14 @@ export enum ColumnType {
   BADGE = "badge",
 }
 
+export type TableColumnStyle = "opaque" | "bold";
+
 export interface ITableColumn {
   key: string;
   header: string;
   type: ColumnType;
+  style?: TableColumnStyle;
+  size?: number;
 }
 
 export interface ITableRow {
@@ -60,8 +64,8 @@ const Table = ({ columns, data }: ITableProps) => {
       <thead>
         <tr>
           {columns.map((col) => (
-            <th key={col.key}>
-              {t(col.header)} {/* Traduz o cabeçalho */}
+            <th key={col.key} style={{ flex: col.size || 1 }}>
+              {t(col.header)}
             </th>
           ))}
         </tr>
@@ -70,7 +74,13 @@ const Table = ({ columns, data }: ITableProps) => {
         {data.map((row, rowIndex) => (
           <tr key={rowIndex}>
             {columns.map((col) => (
-              <td key={col.key}>{renderCell(row[col.key], col.type)}</td>
+              <td
+                key={col.key}
+                style={{ flex: col.size || 1 }}
+                className={col.style}
+              >
+                {renderCell(row[col.key], col.type)}
+              </td>
             ))}
           </tr>
         ))}

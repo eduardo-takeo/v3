@@ -13,3 +13,4 @@
 - [ ] Change banner images
 - [x] Create navbar animation
 - [ ] Add repo url to Table component
+- [ ] Unify projects and render the 3 first elements on Home

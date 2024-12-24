@@ -23,9 +23,9 @@
       "title": "Todos os projetos",
       "columns": {
         "year": "Ano",
-        "name": "Nome",
-        "description": "Descrição",
-        "languages": "Linguagens",
+        "name": "Projeto",
+        "made_at": "Feito em",
+        "languages": "Construído com",
         "page": "Link"
       }
     }
