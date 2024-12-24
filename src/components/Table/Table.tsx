@@ -63,9 +63,7 @@ const Table = ({ columns, data }: ITableProps) => {
       <thead>
         <tr>
           {columns.map((col) => (
-            <th key={col.key}>
-              {t(col.header)} {/* Traduz o cabeçalho */}
-            </th>
+            <th key={col.key}>{t(col.header)}</th>
           ))}
         </tr>
       </thead>

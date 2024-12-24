@@ -19,14 +19,20 @@ const columns: ITableColumn[] = [
     style: "bold",
   },
   {
-    key: "description",
-    header: "projects.table.columns.description",
+    key: "made_at",
+    header: "projects.table.columns.made_at",
     type: ColumnType.TEXT,
+    style: "opaque",
   },
   {
     key: "languages",
     header: "projects.table.columns.languages",
     type: ColumnType.BADGE,
+  },
+  {
+    key: "url",
+    header: "projects.table.columns.page",
+    type: ColumnType.LINK,
   },
 ];
 

@@ -23,9 +23,9 @@
       "title": "All projects",
       "columns": {
         "year": "Year",
-        "name": "Name",
-        "description": "Description",
-        "languages": "Languages",
+        "name": "Project",
+        "made_at": "Made at",
+        "languages": "Built with",
         "page": "Link"
       }
     }
