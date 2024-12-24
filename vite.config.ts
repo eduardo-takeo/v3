@@ -20,6 +20,7 @@ export default defineConfig({
         additionalData: `
           @use "@/styles/_breakpoints.scss" as *;
           @use "@/styles/_colors.scss" as *;
+          @use "@/styles/_animations.scss" as *;
         `,
       },
     },
