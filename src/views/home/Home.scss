@@ -15,45 +15,41 @@
   top: 0;
 
   &__presentation-card {
-    > h1 {
+    >h1 {
       font-size: 2.8rem;
     }
   }
 
   &__navbar {
     li {
-      position: relative;
-      transition: all 0.2s ease-in-out;
-      margin-bottom: 0.4rem;
-
-      a {
-        color: $white-400;
-        font-size: 0.8rem;
-        text-transform: uppercase;
+      &:not(:last-child) {
+        margin-bottom: 10px;
       }
+    }
 
-      ::before {
+    a {
+      color: $white-400;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+
+      &::before {
         content: "";
-        position: absolute;
-        left: 30px;
-        bottom: 12px;
-        width: 0;
-        height: 2px;
+        display: inline-block;
+        height: 1.6px;
         background-color: $white-800;
-        transition: width 0.3s;
-        transform: translateX(-50%);
       }
 
       &:hover {
-        padding-left: 4rem;
+        color: $white-1000;
 
-        a {
-          font-size: 1rem;
-          color: $white-800;
-        }
-
-        ::before {
-          width: 50px;
+        &::before {
+          animation-name: right-to-left-animation;
+          animation-duration: 0.3s;
+          animation-fill-mode: forwards;
+          margin-right: 10px;
         }
       }
     }
@@ -89,7 +85,7 @@
     gap: 0.5rem;
     color: $teal;
 
-    & > svg {
+    &>svg {
       width: 1.5rem;
       height: 1.5rem;
       fill: $teal;
@@ -99,7 +95,7 @@
     &:hover {
       text-decoration: underline;
 
-      & > svg {
+      &>svg {
         transform: translateX(4px);
       }
     }
