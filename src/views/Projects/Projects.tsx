@@ -10,8 +10,14 @@ const columns: ITableColumn[] = [
     key: "created_at",
     header: "projects.table.columns.year",
     type: ColumnType.DATE,
+    style: "opaque",
   },
-  { key: "name", header: "projects.table.columns.name", type: ColumnType.TEXT },
+  {
+    key: "name",
+    header: "projects.table.columns.name",
+    type: ColumnType.TEXT,
+    style: "bold",
+  },
   {
     key: "description",
     header: "projects.table.columns.description",
