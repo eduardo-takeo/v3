@@ -11,28 +11,33 @@ const columns: ITableColumn[] = [
     header: "projects.table.columns.year",
     type: ColumnType.DATE,
     style: "opaque",
+    size: 1,
   },
   {
     key: "name",
     header: "projects.table.columns.name",
     type: ColumnType.TEXT,
     style: "bold",
+    size: 3,
   },
   {
     key: "made_at",
     header: "projects.table.columns.made_at",
     type: ColumnType.TEXT,
     style: "opaque",
+    size: 2,
   },
   {
     key: "languages",
     header: "projects.table.columns.languages",
     type: ColumnType.BADGE,
+    size: 6,
   },
   {
     key: "url",
     header: "projects.table.columns.page",
     type: ColumnType.LINK,
+    size: 4,
   },
 ];
 

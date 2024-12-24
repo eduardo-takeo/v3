@@ -1,19 +1,50 @@
 .table {
+  width: 100%;
   border-collapse: collapse;
 
-  th {
-    padding: 0.5rem;
-    text-align: left;
+  thead {
+    display: flex;
+    width: 100%;
+
+    tr {
+      display: flex;
+      width: 100%;
+
+      th {
+        padding: 8px;
+        text-align: left;
+        flex: 1;
+        min-width: 0;
+        font-size: 0.9rem;
+      }
+    }
   }
 
-  td {
-    padding: 1.5rem 0.5rem;
-    border-bottom: 0.5px solid rgba($color: $white-400, $alpha: 0.2);
+  tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    tr {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+
+      td {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        flex: 1;
+        min-width: 0;
+        border-bottom: 0.5px solid rgba($color: $white-400, $alpha: 0.2);
+      }
+    }
   }
 
   .badges {
     &__container {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
     }
   }
