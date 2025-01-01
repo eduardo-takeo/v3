@@ -2,7 +2,8 @@
   "general": {
     "goBackToHome": "Voltar para a página inicial",
     "seeAllProjects": "Ver todos os projetos",
-    "seeResume": "Ver currículo"
+    "seeResume": "Ver currículo",
+    "github": "GitHub"
   },
   "navbar": {
     "about": "Sobre",

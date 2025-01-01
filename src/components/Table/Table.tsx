@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Badge from "@/components/Badge/Badge";
+import GithubIcon from "../../assets/icons/github.svg?react";
 import "./Table.scss";
 
 export enum ColumnType {
@@ -44,8 +45,20 @@ const Table = ({ columns, data }: ITableProps) => {
         ) : null;
       case ColumnType.LINK:
         return typeof value === "string" ? (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            {value}
+          <a
+            href={value}
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {value.includes("github") ? (
+              <>
+                <span>{t("general.github")} </span>
+                <GithubIcon />
+              </>
+            ) : (
+              value
+            )}
           </a>
         ) : null;
       case ColumnType.DATE:
