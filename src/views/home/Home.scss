@@ -8,6 +8,10 @@
     flex-direction: column;
     max-width: 90vw;
   }
+
+  @include respond-to("lg") {
+    max-width: 80vw;
+  }
 }
 
 .main-menu {
