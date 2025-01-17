@@ -3,6 +3,11 @@
   max-width: 64vw;
   margin: auto;
   gap: 2rem;
+
+  @include respond-to("md") {
+    flex-direction: column;
+    max-width: 90vw;
+  }
 }
 
 .main-menu {
@@ -54,11 +59,22 @@
         }
       }
     }
+
+    @include respond-to("md") {
+      display: none;
+    }
   }
 
   &__social {
     display: flex;
     gap: 1rem;
+  }
+
+  @include respond-to("md") {
+    gap: 5rem;
+    height: 40vh;
+    width: 100%;
+    position: static;
   }
 }
 
@@ -100,6 +116,10 @@
         transform: translateX(4px);
       }
     }
+  }
+
+  @include respond-to("md") {
+    width: 100%;
   }
 }
 
