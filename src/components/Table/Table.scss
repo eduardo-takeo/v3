@@ -61,11 +61,16 @@
   & svg {
     width: 15px;
     height: 15px;
+    fill: $white-400;
   }
 
   &:hover {
     color: $white-1000;
     text-decoration: underline;
+
+    & svg {
+      fill: $white-1000;
+    }
   }
 }
 

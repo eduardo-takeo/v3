@@ -1,7 +1,11 @@
 import { useTranslation } from "react-i18next";
 import Badge from "@/components/Badge/Badge";
 import GithubIcon from "../../assets/icons/github.svg?react";
+import PlayStoreIcon from "../../assets/icons/google-play.svg?react";
+import AppStoreIcon from "../../assets/icons/app-store.svg?react";
+import UrlIcon from "../../assets/icons/url.svg?react";
 import "./Table.scss";
+import { getUrlType } from "@/helpers/utils";
 
 export enum ColumnType {
   TEXT = "text",
@@ -12,6 +16,8 @@ export enum ColumnType {
 }
 
 export type TableColumnStyle = "opaque" | "bold";
+
+export type LinkType = "github" | "playStore" | "appStore" | "commonUrl";
 
 export interface ITableColumn {
   key: string;
@@ -30,6 +36,25 @@ interface ITableProps {
   data: ITableRow[];
 }
 
+const iconMap = {
+  github: {
+    text: "general.github",
+    icon: <GithubIcon />,
+  },
+  playStore: {
+    text: "general.playStore",
+    icon: <PlayStoreIcon />,
+  },
+  appStore: {
+    text: "general.appStore",
+    icon: <AppStoreIcon />,
+  },
+  commonUrl: {
+    text: "general.commonUrl",
+    icon: <UrlIcon />,
+  },
+};
+
 const Table = ({ columns, data }: ITableProps) => {
   const { t } = useTranslation();
 
@@ -44,23 +69,24 @@ const Table = ({ columns, data }: ITableProps) => {
           </span>
         ) : null;
       case ColumnType.LINK:
-        return typeof value === "string" ? (
-          <a
-            href={value}
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {value.includes("github") ? (
+        if (typeof value === "string") {
+          const url = iconMap[getUrlType(value)];
+          return (
+            <a
+              href={value}
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <>
-                <span>{t("general.github")} </span>
-                <GithubIcon />
+                <span>{t(url.text)}</span>
+                {url.icon}
               </>
-            ) : (
-              value
-            )}
-          </a>
-        ) : null;
+            </a>
+          );
+        } else {
+          return null;
+        }
       case ColumnType.DATE:
         return value
           ? new Date(value as string).getFullYear().toString()

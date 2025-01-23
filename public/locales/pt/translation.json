@@ -3,7 +3,10 @@
     "goBackToHome": "Voltar para a página inicial",
     "seeAllProjects": "Ver todos os projetos",
     "seeResume": "Ver currículo",
-    "github": "GitHub"
+    "github": "GitHub",
+    "playStore": "Google Play Store",
+    "appStore": "App Store",
+    "commonUrl": "URL"
   },
   "navbar": {
     "about": "Sobre",
